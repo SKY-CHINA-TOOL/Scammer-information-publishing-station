@@ -119,8 +119,8 @@ feed:
 ## 文档: https://hexo.io/zh-cn/docs/one-command-deployment
 deploy:
   - type: git
-    repo: https://github.com/用户名/用户名.github.io.git
-    branch: main
+    repo: https://github.com/SKY-CHINA-TOOL/Scammer-information-publishing-station.git
+    branch: gh-pages
     message: "网站更新: {{now('YYYY-MM-DD HH:mm:ss')}}"
     name: github
     email: 您的邮箱

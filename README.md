@@ -21,15 +21,28 @@ deploy:
 2. 运行部署命令：
 
 ```bash
+# 使用部署脚本
+./deploy-github.sh
+
+# 或直接使用Hexo命令
 hexo clean && hexo deploy
 ```
 
 ### Vercel 部署
 
-1. 在 Vercel 上创建新项目
-2. 导入此 Git 仓库
-3. 构建命令会自动使用 `vercel-build` 脚本
-4. 部署目录设置为 `public`
+1. 使用部署脚本（推荐）：
+
+```bash
+./deploy-vercel.sh
+```
+
+2. 或手动部署：
+   - 在 Vercel 上创建新项目
+   - 导入此 Git 仓库
+   - 构建命令会自动使用 `vercel-build` 脚本
+   - 部署目录设置为 `public`
+
+详细说明请参考 [VERCEL_SETUP.md](./VERCEL_SETUP.md)
 
 ## 本地开发
 
