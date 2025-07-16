@@ -9,7 +9,8 @@ hexo clean && hexo generate --config _config.yml,_config.prod.yml
 
 # 部署到GitHub
 echo "部署到GitHub Pages..."
-hexo deploy --config _config.yml,_config.prod.yml
+# 添加--force选项强制推送
+hexo deploy --config _config.yml,_config.prod.yml --force
 
 # 检查部署是否成功
 if [ $? -eq 0 ]; then
