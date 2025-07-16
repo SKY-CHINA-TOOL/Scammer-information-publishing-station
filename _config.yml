@@ -13,7 +13,8 @@ timezone: 'Asia/Shanghai'
 
 # 网址
 ## 设置您的网站网址。例如，如果您使用 GitHub Pages，请将网址设置为 'https://用户名.github.io/项目'
-url: http://example.com
+url: https://sky-china-tool.github.io/Scammer-information-publishing-station
+root: /Scammer-information-publishing-station/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
