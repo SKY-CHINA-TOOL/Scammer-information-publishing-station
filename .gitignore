@@ -12,3 +12,4 @@ public/
 .temp/
 .cache/
 dist/
+.vercel
