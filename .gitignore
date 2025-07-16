@@ -13,3 +13,4 @@ public/
 .cache/
 dist/
 .vercel
+_multiconfig.yml
