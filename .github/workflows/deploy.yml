@@ -40,7 +40,13 @@ jobs:
       - name: 部署到GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
+          # 使用GITHUB_TOKEN（默认方式）
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          
+          # 如果上面的方式不起作用，请注释掉上面的github_token行，
+          # 取消注释下面的personal_token行，并确保在仓库设置中添加了PAT密钥
+          # personal_token: ${{ secrets.PAT }}
+          
           publish_dir: ./public
           publish_branch: gh-pages  # 发布到gh-pages分支
           commit_message: ${{ github.event.head_commit.message }}

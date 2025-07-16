@@ -8,9 +8,9 @@
 4. 已添加solitude主题作为Git子模块
 5. 已添加GitHub Actions所需的权限配置
 
-## 需要您手动完成的步骤
+## 需要您手动完成的步骤（组织仓库）
 
-1. 在GitHub仓库中启用GitHub Pages：
+1. 在组织仓库中启用GitHub Pages：
    - 访问您的仓库：https://github.com/SKY-CHINA-TOOL/Scammer-information-publishing-station/settings/pages
    - 在 "Build and deployment" 部分：
      - Source: 选择 "Deploy from a branch"
@@ -18,17 +18,28 @@
      - 点击 "Save"
 
 2. 确保GitHub Actions有适当的权限：
-   - 访问您的仓库：https://github.com/SKY-CHINA-TOOL/Scammer-information-publishing-station/settings/actions
+   - 访问组织设置：https://github.com/organizations/SKY-CHINA-TOOL/settings/actions
+   - 在 "Policies" 选项卡下：
+     - 确保 "Allow all actions and reusable workflows" 被选中
+     - 或者至少允许 "peaceiris/actions-gh-pages" 和其他必要的操作
+
+3. 为仓库配置特定的权限：
+   - 访问仓库设置：https://github.com/SKY-CHINA-TOOL/Scammer-information-publishing-station/settings/actions
    - 在 "Workflow permissions" 部分：
      - 选择 "Read and write permissions"
      - 勾选 "Allow GitHub Actions to create and approve pull requests"
      - 点击 "Save"
 
-3. 检查GitHub Actions工作流是否正常运行：
+4. 检查组织的GitHub Actions权限：
+   - 访问组织设置：https://github.com/organizations/SKY-CHINA-TOOL/settings/actions
+   - 在 "General" 选项卡下，确保没有限制会阻止Actions运行
+   - 如有必要，在 "Runner groups" 选项卡下检查运行器权限
+
+5. 检查GitHub Actions工作流是否正常运行：
    - 在您的仓库中点击 "Actions" 选项卡
    - 查看是否有名为 "部署到GitHub Pages" 的工作流正在运行或已完成
 
-4. 访问您的GitHub Pages网站：
+6. 访问您的GitHub Pages网站：
    - 您的网站应该可以通过以下URL访问：
    - https://sky-china-tool.github.io/Scammer-information-publishing-station/
 
@@ -41,6 +52,33 @@
 
 2. 如果您需要使用HTTPS：
    - 启用自定义域名后，勾选 "Enforce HTTPS" 选项
+
+## 使用个人访问令牌(PAT)部署（如果上述方法不起作用）
+
+如果组织设置中的权限配置仍然不能解决问题，您可以使用个人访问令牌(PAT)：
+
+1. 创建个人访问令牌：
+   - 访问 https://github.com/settings/tokens
+   - 点击 "Generate new token"
+   - 选择 "repo" 权限
+   - 生成并复制令牌
+
+2. 在仓库中添加密钥：
+   - 访问仓库设置：https://github.com/SKY-CHINA-TOOL/Scammer-information-publishing-station/settings/secrets/actions
+   - 点击 "New repository secret"
+   - 名称设为 "PAT"
+   - 值设为您刚才创建的个人访问令牌
+   - 点击 "Add secret"
+
+3. 修改GitHub Actions工作流文件：
+   ```yaml
+   - name: 部署到GitHub Pages
+     uses: peaceiris/actions-gh-pages@v3
+     with:
+       personal_token: ${{ secrets.PAT }}  # 使用PAT而不是GITHUB_TOKEN
+       publish_dir: ./public
+       publish_branch: gh-pages
+   ```
 
 ## 手动部署方法
 
@@ -67,5 +105,6 @@ hexo clean && hexo deploy
    - 等待几分钟，GitHub Pages的更新可能需要一些时间
 
 3. 如果遇到权限错误（403 Forbidden）：
-   - 确保GitHub Actions有适当的权限（见上述步骤2）
-   - 检查仓库的访问控制设置 
+   - 确保GitHub Actions有适当的权限（见上述步骤）
+   - 检查组织的访问控制设置
+   - 考虑使用个人访问令牌(PAT)方法 
