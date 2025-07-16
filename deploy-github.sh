@@ -5,11 +5,11 @@ echo "开始部署到 GitHub Pages..."
 
 # 确保工作目录干净
 echo "清理和生成站点..."
-hexo clean && hexo generate
+hexo clean && hexo generate --config _config.yml,_config.prod.yml
 
 # 部署到GitHub
 echo "部署到GitHub Pages..."
-hexo deploy
+hexo deploy --config _config.yml,_config.prod.yml
 
 # 检查部署是否成功
 if [ $? -eq 0 ]; then
