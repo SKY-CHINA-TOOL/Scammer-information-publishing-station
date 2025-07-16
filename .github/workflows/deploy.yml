@@ -5,6 +5,12 @@ on:
     branches:
       - main  # 当推送到main分支时触发
 
+# 设置GITHUB_TOKEN的权限
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
