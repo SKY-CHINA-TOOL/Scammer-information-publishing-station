@@ -1,3 +1,19 @@
 # Vercel 环境配置
 url: https://sky-pianzi.kevcore.cn
 root: / 
+
+# Algolia 搜索配置
+algolia:
+  applicationID: 'B7QPI6Y9OK'
+  apiKey: 'cb4cf018a47ac630467a99701b6bcf44'
+  indexName: 'sky_pianzi_kevcore_cn_b7qpi6y9ok_p'
+  chunkSize: 5000
+  fields:
+    - content:strip:truncate,0,500
+    - excerpt:strip
+    - gallery
+    - permalink
+    - photos
+    - slug
+    - tags
+    - title 
