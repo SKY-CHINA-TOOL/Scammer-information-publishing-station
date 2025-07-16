@@ -780,21 +780,21 @@ pwa:
 comment:
   # Which commenting system to use(e.g. waline or waline,twikoo)
   # 使用哪个评论系统（例如： waline or waline,twikoo）
-  use: # waline, twikoo, valine, artalk, giscus # Up to two comment systems can be turned on at the same time
+  use: waline # waline, twikoo, valine, artalk, giscus # Up to two comment systems can be turned on at the same time
   # Whether to display the hot comment switch.
   # 是否显示热门评论开关
   commentBarrage: false
   # Lazy load
   # 懒加载评论区
-  lazyload: false
+  lazyload: true
   # Whether to display the comment count
   # 显示评论数
-  count: false
+  count: true
   # Sidebar displays the total number of comments
   # Sidebar 显示总评论数
-  sidebar: false
+  sidebar: true
   # PV
-  pv: false
+  pv: true
   # Avatar
   avatar: https://gravatar.com/avatar
   # Hot comment tips
@@ -818,8 +818,8 @@ twikoo: # https://twikoo.js.org/
   option: # twikoo option
 # Waline: https://solitude.js.org/configuration/comment/waline
 waline: # https://waline.js.org/
-  envId: # url: https://waline.wzsco.top
-  pageview: false # Whether to enable page access statistics
+  envId: https://comment.kevcore.cn # url: https://waline.wzsco.top
+  pageview: true # Whether to enable page access statistics
   option: # waline configuration item
 # Valine: https://solitude.js.org/configuration/comment/valine
 valine:

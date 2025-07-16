@@ -82,11 +82,11 @@ cover: /img/jubao.png
 
 对于更详细的举报，您可以通过邮件提交：
 
-1. 发送邮件至：[report@example.com](mailto:report@example.com)
+1. 发送邮件至：[kevin@kevcore.cn](mailto:kevin@kevcore.cn)
 2. 邮件标题格式：【骗子举报】+骗子ID
 3. 邮件内容应包括：
    - 您的游戏ID（可选）
-   - 骗子的游戏ID
+   - 骗子的ID
    - 详细的事件经过
    - 证据附件（截图、录屏等）
 
