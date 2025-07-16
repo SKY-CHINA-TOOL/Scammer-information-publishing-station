@@ -15,7 +15,7 @@ timezone: 'Asia/Shanghai'
 ## 设置您的网站网址。例如，如果您使用 GitHub Pages，请将网址设置为 'https://用户名.github.io/项目'
 url: https://sky-pianzi.kevcore.cn
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :title/
 permalink_defaults:
 pretty_urls:
   trailing_index: false # 设置为 false 可从永久链接中删除尾部的 'index.html'
