@@ -1,0 +1,126 @@
+# Hexo 配置文件
+## 文档: https://hexo.io/zh-cn/docs/configuration.html
+## 源码: https://github.com/hexojs/hexo/
+
+# 网站
+title: 光遇骗子曝光站
+subtitle: '守护光遇纯净环境'
+description: '收集整理光遇游戏中的骗子信息，保护玩家权益'
+keywords: 光遇,骗子,曝光,防骗,游戏安全
+author: 光遇守护者
+language: zh-CN
+timezone: 'Asia/Shanghai'
+
+# 网址
+## 设置您的网站网址。例如，如果您使用 GitHub Pages，请将网址设置为 'https://用户名.github.io/项目'
+url: http://example.com
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+pretty_urls:
+  trailing_index: false # 设置为 false 可从永久链接中删除尾部的 'index.html'
+  trailing_html: false # 设置为 false 可从永久链接中删除尾部的 '.html'
+
+# 目录
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# 写作
+new_post_name: :title.md # 新文章的文件名
+default_layout: post
+titlecase: false # 将标题转换为大写
+external_link:
+  enable: true # 在新标签中打开外部链接
+  field: site # 应用于整个网站
+  exclude: ''
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+syntax_highlighter: highlight.js
+highlight:
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+prismjs:
+  preprocess: true
+  line_number: true
+  tab_replace: ''
+
+# 首页设置
+# path: 博客索引页的根路径。(默认 = '')
+# per_page: 每页显示的文章数。(0 = 禁用分页)
+# order_by: 文章排序方式。(默认按日期降序排列)
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+
+# 分类 & 标签
+default_category: uncategorized
+category_map:
+tag_map:
+
+# 元数据元素
+## https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/meta
+meta_generator: true
+
+# 日期 / 时间格式
+## Hexo 使用 Moment.js 来解析和显示日期
+## 您可以按照 http://momentjs.com/docs/#/displaying/format/ 定义的格式自定义日期格式
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+## updated_option 支持 'mtime'（文件修改时间）, 'date'（日期字段）, 'empty'（空）
+updated_option: 'mtime'
+
+# 分页
+## 设置 per_page 为 0 可以禁用分页
+per_page: 10
+pagination_dir: page
+
+# 包含/排除 文件
+## include:/exclude: 选项仅适用于 'source/' 文件夹
+include:
+exclude:
+ignore:
+
+# 扩展
+## 插件: https://hexo.io/zh-cn/plugins/
+## 主题: https://hexo.io/zh-cn/themes/
+theme: solitude
+
+# 网站地图
+sitemap:
+  path: sitemap.xml
+  rel: false
+  tags: true
+  categories: true
+
+# RSS 订阅
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+
+# 部署
+## 文档: https://hexo.io/zh-cn/docs/one-command-deployment
+deploy:
+  - type: git
+    repo: https://github.com/用户名/用户名.github.io.git
+    branch: main
+    message: "网站更新: {{now('YYYY-MM-DD HH:mm:ss')}}"
+    name: github
+    email: 您的邮箱
