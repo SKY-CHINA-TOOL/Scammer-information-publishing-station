@@ -1,6 +1,7 @@
 ---
 title: 欢迎来到光遇骗子曝光站
 date: 2025-07-16 23:45:00
+permalink: /welcome/
 tags: 
   - 光遇
   - 防骗

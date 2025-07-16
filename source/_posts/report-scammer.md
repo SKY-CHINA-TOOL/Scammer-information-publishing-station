@@ -1,6 +1,7 @@
 ---
 title: 如何有效举报光遇骗子
 date: 2025-07-17 14:15:00
+permalink: /report-scammer/
 tags: 
   - 光遇
   - 举报

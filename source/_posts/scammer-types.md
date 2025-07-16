@@ -1,6 +1,7 @@
 ---
 title: 光遇常见骗术类型及防范指南
 date: 2025-07-17 10:30:00
+permalink: /scammer-types/
 tags: 
   - 光遇
   - 骗术
