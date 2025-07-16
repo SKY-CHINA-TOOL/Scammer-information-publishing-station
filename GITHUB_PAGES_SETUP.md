@@ -5,23 +5,23 @@
 1. 已修改 `_config.yml` 中的部署配置，指向您的GitHub仓库
 2. 已更新 `deploy-github.sh` 脚本，添加了更详细的部署步骤
 3. 已创建 GitHub Actions 工作流配置文件，用于自动部署
+4. 已添加solitude主题作为Git子模块
+5. 已添加GitHub Actions所需的权限配置
 
 ## 需要您手动完成的步骤
 
-1. 将更改推送到GitHub仓库：
-   ```bash
-   git add .
-   git commit -m "配置GitHub Pages部署"
-   git push
-   ```
-
-2. 在GitHub仓库中启用GitHub Pages：
-   - 访问您的仓库：https://github.com/SKY-CHINA-TOOL/Scammer-information-publishing-station
-   - 点击 "Settings" 选项卡
-   - 在左侧菜单中找到 "Pages"
+1. 在GitHub仓库中启用GitHub Pages：
+   - 访问您的仓库：https://github.com/SKY-CHINA-TOOL/Scammer-information-publishing-station/settings/pages
    - 在 "Build and deployment" 部分：
      - Source: 选择 "Deploy from a branch"
      - Branch: 选择 "gh-pages" 分支和 "/(root)" 文件夹
+     - 点击 "Save"
+
+2. 确保GitHub Actions有适当的权限：
+   - 访问您的仓库：https://github.com/SKY-CHINA-TOOL/Scammer-information-publishing-station/settings/actions
+   - 在 "Workflow permissions" 部分：
+     - 选择 "Read and write permissions"
+     - 勾选 "Allow GitHub Actions to create and approve pull requests"
      - 点击 "Save"
 
 3. 检查GitHub Actions工作流是否正常运行：
@@ -64,4 +64,8 @@ hexo clean && hexo deploy
 2. 如果网站无法访问：
    - 确保gh-pages分支已创建并包含生成的网站文件
    - 检查GitHub Pages设置是否正确配置为使用gh-pages分支
-   - 等待几分钟，GitHub Pages的更新可能需要一些时间 
+   - 等待几分钟，GitHub Pages的更新可能需要一些时间
+
+3. 如果遇到权限错误（403 Forbidden）：
+   - 确保GitHub Actions有适当的权限（见上述步骤2）
+   - 检查仓库的访问控制设置 
