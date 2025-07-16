@@ -116,6 +116,22 @@ feed:
   content_limit_delim: ' '
   order_by: -date
 
+# Algolia 搜索
+algolia:
+  applicationID: 'B7QPI6Y9OK' # 你的 Algolia 应用 ID
+  apiKey: 'cb4cf018a47ac630467a99701b6bcf44' # 你的 Algolia API Key
+  indexName: 'sky_pianzi_kevcore_cn_b7qpi6y9ok_p' # 你的 Algolia 索引名称
+  chunkSize: 5000
+  fields:
+    - content:strip:truncate,0,500
+    - excerpt:strip
+    - gallery
+    - permalink
+    - photos
+    - slug
+    - tags
+    - title
+
 # 部署
 ## 文档: https://hexo.io/zh-cn/docs/one-command-deployment
 deploy:

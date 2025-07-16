@@ -849,7 +849,7 @@ giscus:
 # --------------------------- start ---------------------------
 # Search
 search:
-  enable: false
+  enable: true
   type: algolia # local / algolia / docsearch
   tags:
     # - Solitude
