@@ -1,0 +1,318 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><title>光遇常见骗术类型及防范指南 | 光遇骗子曝光站</title><noscript>开启JavaScript才能访问本站哦~</noscript><link rel="icon" href="/Scammer-information-publishing-station/img/pwa/favicon.png"><!-- index.css--><link rel="stylesheet" href="/Scammer-information-publishing-station/css/index.css?v=3.0.19"><!-- inject head--><link rel="canonical" href="https://sky-china-tool.github.io/Scammer-information-publishing-station/scammer-types/"><link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css"><!-- aplayer--><link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css"><!-- swiper--><!-- fancybox ui--><!-- katex--><!-- Open Graph--><meta name="description" content="光遇常见骗术类型及防范指南在《光·遇》这款美好的社交冒险游戏中，大多数玩家都是友善的，但也不乏一些心怀不轨之人。本文将介绍游戏中常见的骗术类型，帮助大家提高警惕，避免上当受骗。 一、账号相关骗局1. 账号交易骗局骗术手法：骗子声称可以出售高级账号（拥有稀有季节道具、大量翼光等），收取款项后就会消失或"><!-- pwa--><meta name="apple-mobile-web-app-capable" content="光遇骗子曝光站"><meta name="theme-color" content="var(--efu-main)"><meta name="apple-mobile-web-app-status-bar-style" content="var(--efu-main)"><link rel="bookmark" href="/Scammer-information-publishing-station/img/pwa/favicon.png"><link rel="apple-touch-icon" href="/Scammer-information-publishing-station/img/pwa/favicon.png" sizes="180x180"><script>console.log(' %c Solitude %c ' + '3.0.19' + ' %c https://github.com/everfu/hexo-theme-solitude',
+    'background:#35495e ; padding: 1px; border-radius: 3px 0 0 3px;  color: #fff',
+    'background:#ff9a9a ; padding: 1px; border-radius: 0 3px 3px 0;  color: #fff',
+    'background:unset ; padding: 1px; border-radius: 0 3px 3px 0;  color: #fff')
+</script><script>let mdate = "";
+mdate = (mdate.split(","));
+let ndate = new Date();
+for (let i of mdate) {
+    if (i === (ndate.getMonth()+1) + "-" + (ndate.getDate())) {
+        document.documentElement.classList.add('memorial');
+    }
+}
+</script><script>(()=>{
+        const saveToLocal = {
+            set: function setWithExpiry(key, value, ttl) {
+                if (ttl === 0)
+                    return
+                const now = new Date()
+                const expiryDay = ttl * 86400000
+                const item = {
+                    value: value,
+                    expiry: now.getTime() + expiryDay
+                }
+                localStorage.setItem(key, JSON.stringify(item))
+            },
+            get: function getWithExpiry(key) {
+                const itemStr = localStorage.getItem(key)
+
+                if (!itemStr) {
+                    return undefined
+                }
+                const item = JSON.parse(itemStr)
+                const now = new Date()
+
+                if (now.getTime() > item.expiry) {
+                    localStorage.removeItem(key)
+                    return undefined
+                }
+                return item.value
+            }
+        };
+        window.utils = {
+            saveToLocal: saveToLocal,
+            getCSS: (url, id = false) => new Promise((resolve, reject) => {
+              const link = document.createElement('link')
+              link.rel = 'stylesheet'
+              link.href = url
+              if (id) link.id = id
+              link.onerror = reject
+              link.onload = link.onreadystatechange = function() {
+                const loadState = this.readyState
+                if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+                link.onload = link.onreadystatechange = null
+                resolve()
+              }
+              document.head.appendChild(link)
+            }),
+            getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+              const script = document.createElement('script')
+              script.src = url
+              script.async = true
+              script.onerror = reject
+              script.onload = script.onreadystatechange = function() {
+                const loadState = this.readyState
+                if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+                script.onload = script.onreadystatechange = null
+                resolve()
+              }
+
+              Object.keys(attr).forEach(key => {
+                script.setAttribute(key, attr[key])
+              })
+
+              document.head.appendChild(script)
+            }),
+            addGlobalFn: (key, fn, name = false, parent = window) => {
+                const globalFn = parent.globalFn || {}
+                const keyObj = globalFn[key] || {}
+
+                if (name && keyObj[name]) return
+
+                name = name || Object.keys(keyObj).length
+                keyObj[name] = fn
+                globalFn[key] = keyObj
+                parent.globalFn = globalFn
+            },
+            addEventListenerPjax: (ele, event, fn, option = false) => {
+              ele.addEventListener(event, fn, option)
+              utils.addGlobalFn('pjax', () => {
+                  ele.removeEventListener(event, fn, option)
+              })
+            },
+            diffDateFormat: (selector) => {
+                selector.forEach(item => {
+                    const date = new Date(item.getAttribute('datetime') || item.textContent);
+                    item.textContent = (date.getMonth() + 1).toString()+'/'+date.getDate().toString();
+                });
+            },
+        }
+    })()</script><!-- theme--><script>initTheme = () => {
+    let isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const cachedMode = utils.saveToLocal.get('theme');
+    if (cachedMode === undefined) {
+        const nowMode =
+            isDarkMode ? 'dark' : 'light'
+        document.documentElement.setAttribute('data-theme', nowMode);
+    } else {
+        document.documentElement.setAttribute('data-theme', cachedMode);
+    }
+    typeof rm === 'object' && rm.mode(cachedMode === 'dark' && isDarkMode)
+}
+initTheme()</script><!-- global head--><script>const GLOBAL_CONFIG = {
+    root: '/Scammer-information-publishing-station/',
+    algolia: undefined,
+    localsearch: undefined,
+    runtime: '2025-07-17 00:00:00',
+    lazyload: {
+        enable: true,
+        error: '/img/error_load.avif'
+    },
+    copyright: false,
+    highlight: {"limit":200,"expand":true,"copy":true,"syntax":"highlight.js"},
+    randomlink: false,
+    lang: {"theme":{"dark":"已切换至深色模式","light":"已切换至浅色模式"},"copy":{"success":"复制成功","error":"复制失败"},"backtop":"返回顶部","time":{"day":"天前","hour":"小时前","just":"刚刚","min":"分钟前","month":"个月前"},"day":" 天","f12":"开发者模式已打开，请遵循GPL协议。","totalk":"无需删除空行，直接输入评论即可"},
+    aside: {
+        state: {
+            morning: "✨ 早上好，新的一天开始了",
+            noon: "🍲 午餐时间",
+            afternoon: "🌞 下午好",
+            night: "早点休息",
+            goodnight: "晚安 😴",
+        },
+        witty_words: [],
+        witty_comment: {
+            prefix: '好久不见，',
+            back: '欢迎再次回来，',
+        },
+    },
+    covercolor: {
+        enable: true
+    },
+    comment: false,
+    lightbox: 'null',
+    right_menu: false,
+    translate: {"translateDelay":0,"defaultEncoding":2},
+    lure: {"jump":"404 Not Found","back":"ヾ(≧∇≦*)ゝHey, hey, you fell for it."},
+    expire: false,
+};</script><!-- page-config head--><script id="config-diff">var PAGE_CONFIG = {
+    is_post: true,
+    is_page: false,
+    is_home: false,
+    page: '',
+    toc: true,
+    comment: true,
+    ai_text: false,
+    color: false,
+}</script><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/Scammer-information-publishing-station/atom.xml" title="光遇骗子曝光站" type="application/atom+xml">
+</head><body id="body"><!-- universe--><canvas id="universe"></canvas><!-- background img--><!-- loading--><!-- console--><!-- sidebar--><div id="sidebar" style="zoom: 1;"><div id="menu-mask" style="display: none;"></div><div id="sidebar-menus"><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/Scammer-information-publishing-station/archives/"><div class="headline">文章</div><div class="length-num">7</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/Scammer-information-publishing-station/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/Scammer-information-publishing-station/tags/"><div class="headline">标签</div><div class="length-num">7</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/Scammer-information-publishing-station/recentcomments/"><div class="headline">评论</div><div class="length-num" id="waline_allcount"><i class="solitude fas fa-spinner fa-spin"></i></div><script pjax="pjax">(async () => {
+  await fetch('https://comment.kevcore.cn/api/comment?type=count', {method: 'GET'}).then(async res => res.json())
+    .then(async data => {
+      document.querySelector('#waline_allcount').innerHTML = data.data
+    })
+})()</script></a></div></div></div><span class="sidebar-menu-item-title">功能</span><div class="sidebar-menu-item"><span class="darkmode_switchbutton menu-child" onclick="sco.switchDarkMode()"><i class="solitude fas fa-circle-half-stroke"></i><span>显示模式</span></span></div><span class="sidebar-menu-item-title">标签</span><div class="card-tags"><div class="card-tag-cloud"><a href="/Scammer-information-publishing-station/tags/%E5%85%89%E9%81%87/">光遇<sup>7</sup></a><a href="/Scammer-information-publishing-station/tags/%E4%B8%BE%E6%8A%A5/">举报<sup>1</sup></a><a href="/Scammer-information-publishing-station/tags/%E9%98%B2%E9%AA%97/">防骗<sup>3</sup></a><a href="/Scammer-information-publishing-station/tags/%E9%AA%97%E6%9C%AF/">骗术<sup>1</sup></a><a href="/Scammer-information-publishing-station/tags/%E5%85%AC%E5%91%8A/">公告<sup>1</sup></a><a href="/Scammer-information-publishing-station/tags/%E9%AA%97%E5%AD%90/">骗子<sup>4</sup></a><a href="/Scammer-information-publishing-station/tags/%E6%9B%9D%E5%85%89/">曝光<sup>4</sup></a></div></div></div></div><!-- keyboard--><!-- righhtside--><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav class="show" id="nav"><div id="nav-group"><div id="blog_name"><a id="site-name" href="/Scammer-information-publishing-station/" title="返回博客主页"><span class="title">光遇骗子曝光站</span><i class="solitude fas fa-home"></i></a></div><div id="page-name-mask"><div id="page-name"><a id="page-name-text" onclick="sco.toTop()">光遇常见骗术类型及防范指南</a></div></div><div id="menus"></div><div id="nav-left"></div><div id="nav-right"><div class="nav-button" id="nav-totop" onclick="sco.toTop()"><a class="totopbtn"><i class="solitude fas fa-arrow-up"></i><span id="percent">0</span></a></div><div id="toggle-menu"><a class="site-page"><i class="solitude fas fa-bars"></i></a></div></div></div></nav><div class="coverdiv" id="coverdiv"><img class="nolazyload" id="post-cover" src="/Scammer-information-publishing-station/img/custom.png" alt="光遇常见骗术类型及防范指南"></div><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original" title="该文章为原创文章，注意版权协议">原创</a><span class="post-meta-categories"><a class="post-meta-categories" href="/Scammer-information-publishing-station/categories/%E9%98%B2%E9%AA%97%E6%8C%87%E5%8D%97/">防骗指南</a></span><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/Scammer-information-publishing-station/tags/%E5%85%89%E9%81%87/"><span class="tags-name tags-punctuation"><i class="solitude fas fa-hashtag"></i>光遇</span></a><a class="post-meta__tags" href="/Scammer-information-publishing-station/tags/%E9%98%B2%E9%AA%97/"><span class="tags-name tags-punctuation"><i class="solitude fas fa-hashtag"></i>防骗</span></a><a class="post-meta__tags" href="/Scammer-information-publishing-station/tags/%E9%AA%97%E6%9C%AF/"><span class="tags-name tags-punctuation"><i class="solitude fas fa-hashtag"></i>骗术</span></a></div></div></div></div><h1 class="post-title">光遇常见骗术类型及防范指南</h1><div id="post-meta"><div class="meta-secondline"></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content article-container"><h1 id="光遇常见骗术类型及防范指南"><a href="#光遇常见骗术类型及防范指南" class="headerlink" title="光遇常见骗术类型及防范指南"></a>光遇常见骗术类型及防范指南</h1><p>在《光·遇》这款美好的社交冒险游戏中，大多数玩家都是友善的，但也不乏一些心怀不轨之人。本文将介绍游戏中常见的骗术类型，帮助大家提高警惕，避免上当受骗。</p>
+<h2 id="一、账号相关骗局"><a href="#一、账号相关骗局" class="headerlink" title="一、账号相关骗局"></a>一、账号相关骗局</h2><h3 id="1-账号交易骗局"><a href="#1-账号交易骗局" class="headerlink" title="1. 账号交易骗局"></a>1. 账号交易骗局</h3><p><strong>骗术手法</strong>：骗子声称可以出售高级账号（拥有稀有季节道具、大量翼光等），收取款项后就会消失或提供虚假账号。</p>
+<p><strong>防范方法</strong>：</p>
+<ul>
+<li>官方明确禁止账号交易行为</li>
+<li>任何账号交易都存在风险，且可能导致账号被封</li>
+<li>不要相信任何声称可以”安全交易”的说法</li>
+</ul>
+<h3 id="2-账号共享骗局"><a href="#2-账号共享骗局" class="headerlink" title="2. 账号共享骗局"></a>2. 账号共享骗局</h3><p><strong>骗术手法</strong>：骗子以”共享季节通行证”、”共享稀有道具”为诱饵，要求玩家共享账号密码。</p>
+<p><strong>防范方法</strong>：</p>
+<ul>
+<li>永远不要与任何人分享您的账号信息</li>
+<li>官方不支持任何形式的账号共享</li>
+<li>启用双重验证保护您的账号</li>
+</ul>
+<h2 id="二、游戏内交易骗局"><a href="#二、游戏内交易骗局" class="headerlink" title="二、游戏内交易骗局"></a>二、游戏内交易骗局</h2><h3 id="1-烛光-心光交易骗局"><a href="#1-烛光-心光交易骗局" class="headerlink" title="1. 烛光&#x2F;心光交易骗局"></a>1. 烛光&#x2F;心光交易骗局</h3><p><strong>骗术手法</strong>：骗子承诺可以通过某种”特殊方式”交易烛光或心光，要求先付款或先送心。</p>
+<p><strong>防范方法</strong>：</p>
+<ul>
+<li>游戏内不存在直接交易烛光的机制</li>
+<li>心光赠送是单向的，不应期望”对等交换”</li>
+<li>对于要求先送心的陌生玩家保持警惕</li>
+</ul>
+<h3 id="2-道具赠送骗局"><a href="#2-道具赠送骗局" class="headerlink" title="2. 道具赠送骗局"></a>2. 道具赠送骗局</h3><p><strong>骗术手法</strong>：骗子声称可以通过特殊方式赠送商店道具或季节道具给其他玩家。</p>
+<p><strong>防范方法</strong>：</p>
+<ul>
+<li>游戏内不存在直接赠送商店道具的功能</li>
+<li>季节道具和IAP道具无法转赠</li>
+<li>任何声称可以”送道具”的都是骗局</li>
+</ul>
+<h2 id="三、社交媒体骗局"><a href="#三、社交媒体骗局" class="headerlink" title="三、社交媒体骗局"></a>三、社交媒体骗局</h2><h3 id="1-虚假官方活动"><a href="#1-虚假官方活动" class="headerlink" title="1. 虚假官方活动"></a>1. 虚假官方活动</h3><p><strong>骗术手法</strong>：在社交媒体上冒充官方账号，声称举办送道具、送烛光等活动，要求玩家提供账号信息”领取奖励”。</p>
+<p><strong>防范方法</strong>：</p>
+<ul>
+<li>官方活动只会在官方渠道发布</li>
+<li>核实活动发布账号是否为官方认证账号</li>
+<li>官方从不会要求您提供账号密码</li>
+</ul>
+<h3 id="2-充值代购骗局"><a href="#2-充值代购骗局" class="headerlink" title="2. 充值代购骗局"></a>2. 充值代购骗局</h3><p><strong>骗术手法</strong>：声称可以低价代充值或代购买季节通行证，实际收款后就会消失。</p>
+<p><strong>防范方法</strong>：</p>
+<ul>
+<li>只通过游戏内官方渠道进行充值</li>
+<li>不要相信任何”低价代充”的宣传</li>
+<li>任何第三方充值都存在账号安全风险</li>
+</ul>
+<h2 id="四、情感操纵类骗局"><a href="#四、情感操纵类骗局" class="headerlink" title="四、情感操纵类骗局"></a>四、情感操纵类骗局</h2><h3 id="1-“好友”骗局"><a href="#1-“好友”骗局" class="headerlink" title="1. “好友”骗局"></a>1. “好友”骗局</h3><p><strong>骗术手法</strong>：骗子会花时间与玩家建立”友谊”，获取信任后，以各种理由（如急需充值、家庭困难等）要求金钱帮助。</p>
+<p><strong>防范方法</strong>：</p>
+<ul>
+<li>对游戏中结识不久就提出金钱要求的”朋友”保持警惕</li>
+<li>不要因为情感因素而忽视可疑迹象</li>
+<li>拒绝任何形式的金钱借贷请求</li>
+</ul>
+<h3 id="2-虚假恋情骗局"><a href="#2-虚假恋情骗局" class="headerlink" title="2. 虚假恋情骗局"></a>2. 虚假恋情骗局</h3><p><strong>骗术手法</strong>：骗子通过建立虚假恋爱关系，逐步获取受害者信任，最终实施经济诈骗。</p>
+<p><strong>防范方法</strong>：</p>
+<ul>
+<li>保持理性，不要轻易相信网络游戏中的”爱情”</li>
+<li>拒绝以爱情为由的金钱请求</li>
+<li>保护个人隐私，不要轻易分享现实生活信息</li>
+</ul>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>在光遇的世界中，我们应该保持警惕但不失善良。记住以下几点核心原则：</p>
+<ol>
+<li><strong>官方渠道原则</strong>：只通过官方渠道进行充值和购买</li>
+<li><strong>账号保护原则</strong>：永远不要分享您的账号信息</li>
+<li><strong>理性交友原则</strong>：在游戏中交友时保持理性</li>
+<li><strong>零金钱交易原则</strong>：拒绝任何游戏外的金钱交易</li>
+</ol>
+<p>如果您不幸遇到骗子，请及时向游戏官方举报，并在本站留言分享您的经历，帮助更多玩家避免同样的陷阱。</p>
+<p>让我们共同维护光遇的纯净世界！ </p>
+</article><div class="post-copyright"><div class="post-copyright__author_group"><div class="post-copyright__author_img"><img class="post-copyright__author_img_front" src= "" data-lazy-src="/Scammer-information-publishing-station/img/logo.png"></div><div class="post-copyright__author_name">光遇守护者</div><div class="post-copyright__author_desc">守护光遇纯净环境</div></div><div class="post-tools" id="post-tools"><div class="post-tools-left"><div id="quit-box" onclick="RemoveRewardMask()"></div></div></div><div class="post-copyright__notice"><span class="post-copyright-info">本文是原创文章，采用<a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>协议，完整转载请注明来自<a href="/Scammer-information-publishing-station/">光遇骗子曝光站</a></span></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/Scammer-information-publishing-station/tags/%E5%85%89%E9%81%87/"><span class="tags-punctuation"><i class="solitude fas fa-hashtag"></i>光遇<span class="tagsPageCount">7</span></span></a><a class="post-meta__tags" href="/Scammer-information-publishing-station/tags/%E9%98%B2%E9%AA%97/"><span class="tags-punctuation"><i class="solitude fas fa-hashtag"></i>防骗<span class="tagsPageCount">3</span></span></a><a class="post-meta__tags" href="/Scammer-information-publishing-station/tags/%E9%AA%97%E6%9C%AF/"><span class="tags-punctuation"><i class="solitude fas fa-hashtag"></i>骗术<span class="tagsPageCount">1</span></span></a></div></div></div><nav class="needEndHide pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/Scammer-information-publishing-station/report-scammer/"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">如何有效举报光遇骗子</div></div></a></div><div class="next-post pull-right"><a href="/Scammer-information-publishing-station/welcome/"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">欢迎来到光遇骗子曝光站</div></div></a></div></nav><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="solitude fas fa-comment"></i><span> 评论</span><span class="count"> (<span class="waline-comment-count"><i class="solitude fas fa-spinner fa-spin"></i></span>)</span></div></div><div class="comment-wrap"><div id="waline-wrap"></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><div class="top-group"><div class="sayhi" id="sayhi" onclick="sco.changeWittyWord()"></div></div></div><div class="avatar"><img alt="头像" src= "" data-lazy-src="http://q1.qlogo.cn/g?b=qq&amp;nk=1354903463&amp;s=100"></div><div class="description"></div><div class="bottom-group"><span class="left"><div class="name">光遇守护者</div><div class="desc">只有迎风，风筝才能飞得更高。</div></span><div class="social-icons is-center"><a class="social-icon" target="_blank" rel="noopener" href="https://github.com/SKY-CHINA-TOOL/Scammer-information-publishing-station" title="Github"><i class="solitude  fab fa-github"></i></a></div></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="solitude fas fa-bars"></i><span>文章目录</span></div><div class="toc-content" id="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%89%E9%81%87%E5%B8%B8%E8%A7%81%E9%AA%97%E6%9C%AF%E7%B1%BB%E5%9E%8B%E5%8F%8A%E9%98%B2%E8%8C%83%E6%8C%87%E5%8D%97"><span class="toc-text">光遇常见骗术类型及防范指南</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E8%B4%A6%E5%8F%B7%E7%9B%B8%E5%85%B3%E9%AA%97%E5%B1%80"><span class="toc-text">一、账号相关骗局</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E8%B4%A6%E5%8F%B7%E4%BA%A4%E6%98%93%E9%AA%97%E5%B1%80"><span class="toc-text">1. 账号交易骗局</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E8%B4%A6%E5%8F%B7%E5%85%B1%E4%BA%AB%E9%AA%97%E5%B1%80"><span class="toc-text">2. 账号共享骗局</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E6%B8%B8%E6%88%8F%E5%86%85%E4%BA%A4%E6%98%93%E9%AA%97%E5%B1%80"><span class="toc-text">二、游戏内交易骗局</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E7%83%9B%E5%85%89-%E5%BF%83%E5%85%89%E4%BA%A4%E6%98%93%E9%AA%97%E5%B1%80"><span class="toc-text">1. 烛光&#x2F;心光交易骗局</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E9%81%93%E5%85%B7%E8%B5%A0%E9%80%81%E9%AA%97%E5%B1%80"><span class="toc-text">2. 道具赠送骗局</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93%E9%AA%97%E5%B1%80"><span class="toc-text">三、社交媒体骗局</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E8%99%9A%E5%81%87%E5%AE%98%E6%96%B9%E6%B4%BB%E5%8A%A8"><span class="toc-text">1. 虚假官方活动</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%85%85%E5%80%BC%E4%BB%A3%E8%B4%AD%E9%AA%97%E5%B1%80"><span class="toc-text">2. 充值代购骗局</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E6%83%85%E6%84%9F%E6%93%8D%E7%BA%B5%E7%B1%BB%E9%AA%97%E5%B1%80"><span class="toc-text">四、情感操纵类骗局</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E2%80%9C%E5%A5%BD%E5%8F%8B%E2%80%9D%E9%AA%97%E5%B1%80"><span class="toc-text">1. “好友”骗局</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E8%99%9A%E5%81%87%E6%81%8B%E6%83%85%E9%AA%97%E5%B1%80"><span class="toc-text">2. 虚假恋情骗局</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-text">总结</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="solitude fas fa-map"></i><span>最近发布</span></div><div class="aside-list"><a class="aside-list-item" href="/Scammer-information-publishing-station/20250720/scammer-list/" title="光遇骗子名单（2025-07-20）"><div class="thumbnail"><img alt="光遇骗子名单（2025-07-20）" src= "" data-lazy-src="/Scammer-information-publishing-station/img/20250720.png"></div><div class="content"><span class="title" href="/Scammer-information-publishing-station/20250720/scammer-list/" title="光遇骗子名单（2025-07-20）">光遇骗子名单（2025-07-20）</span><span class="categories" href="/Scammer-information-publishing-station/20250720/scammer-list/">骗子名单</span></div></a><a class="aside-list-item" href="/Scammer-information-publishing-station/20250719/scammer-list/" title="光遇骗子名单（2025-07-19）"><div class="thumbnail"><img alt="光遇骗子名单（2025-07-19）" src= "" data-lazy-src="/Scammer-information-publishing-station/img/20250719.png"></div><div class="content"><span class="title" href="/Scammer-information-publishing-station/20250719/scammer-list/" title="光遇骗子名单（2025-07-19）">光遇骗子名单（2025-07-19）</span><span class="categories" href="/Scammer-information-publishing-station/20250719/scammer-list/">骗子名单</span></div></a><a class="aside-list-item" href="/Scammer-information-publishing-station/20250718/scammer-list/" title="光遇骗子名单（2025-07-18）"><div class="thumbnail"><img alt="光遇骗子名单（2025-07-18）" src= "" data-lazy-src="/Scammer-information-publishing-station/img/20250718.png"></div><div class="content"><span class="title" href="/Scammer-information-publishing-station/20250718/scammer-list/" title="光遇骗子名单（2025-07-18）">光遇骗子名单（2025-07-18）</span><span class="categories" href="/Scammer-information-publishing-station/20250718/scammer-list/">骗子名单</span></div></a><a class="aside-list-item" href="/Scammer-information-publishing-station/20250717/scammer-list/" title="光遇骗子名单（2025-07-17）"><div class="thumbnail"><img alt="光遇骗子名单（2025-07-17）" src= "" data-lazy-src="/Scammer-information-publishing-station/img/20250717.png"></div><div class="content"><span class="title" href="/Scammer-information-publishing-station/20250717/scammer-list/" title="光遇骗子名单（2025-07-17）">光遇骗子名单（2025-07-17）</span><span class="categories" href="/Scammer-information-publishing-station/20250717/scammer-list/">骗子名单</span></div></a><a class="aside-list-item" href="/Scammer-information-publishing-station/report-scammer/" title="如何有效举报光遇骗子"><div class="thumbnail"><img alt="如何有效举报光遇骗子" src= "" data-lazy-src="/Scammer-information-publishing-station/img/jubao.png"></div><div class="content"><span class="title" href="/Scammer-information-publishing-station/report-scammer/" title="如何有效举报光遇骗子">如何有效举报光遇骗子</span><span class="categories" href="/Scammer-information-publishing-station/report-scammer/">举报指南</span></div></a></div></div></div></div></main><footer id="footer"><div id="footer-bar"><div class="footer-bar-links"><div class="footer-bar-left"><div class="copyright">© 2025 By&nbsp;<a class="footer-bar-link" href="/Scammer-information-publishing-station/"><img class="author-avatar" src= "" data-lazy-src="/Scammer-information-publishing-station/img/pwa/favicon.png">光遇守护者</a></div><div class="beian-group"><a class="footer-bar-link" target="_blank" rel="noopener" href="https://hexo.io/">框架：Hexo</a><a class="footer-bar-link" target="_blank" rel="noopener" href="https://github.com/everfu/hexo-theme-solitude">主题：Solitude</a></div></div></div></div></footer></div><!-- right_menu--><!-- inject body--><div><script src="/Scammer-information-publishing-station/js/utils.js?v=3.0.19"></script><script src="/Scammer-information-publishing-station/js/main.js?v=3.0.19"></script><script src="/Scammer-information-publishing-station/js/third_party/waterfall.min.js?v=3.0.19"></script><script src="https://fastly.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script src="https://fastly.jsdelivr.net/npm/typeit@8.8.7/dist/index.umd.min.js"></script><script src="/Scammer-information-publishing-station/js/third_party/universe.min.js?v=3.0.19"></script><script>dark()
+</script><script src="/Scammer-information-publishing-station/js/tw_cn.js?v=3.0.19"></script><script src="https://fastly.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.iife.min.js"></script><script src="https://fastly.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.js"></script><script>var meting_api = 'https://meting.qjqq.cn/?server=:server&type=:type&id=:id&auth=:auth&r=:r';</script><script src="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script><script src="https://fastly.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script><script src="https://fastly.jsdelivr.net/npm/colorthief@2.6.0/dist/color-thief.min.js"></script><script src="/Scammer-information-publishing-station/js/covercolor/local.js?v=3.0.19"></script><script>window.paceOptions = {
+  restartOnPushState: false
+}
+
+utils.addGlobalFn('pjaxSend', () => {
+  Pace.restart()
+}, 'pace_restart')
+</script><script src="https://fastly.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><div class="js-pjax"><script>(() => {
+    let walineInitFunction = window.walineFn || null
+
+    function initWaline(initFn) {
+        const walineOptions = {
+            el: '#waline-wrap',
+            serverURL: 'https://comment.kevcore.cn',
+            pageview: true,
+            dark: 'html[data-theme="dark"]',
+            path: window.location.pathname,
+            comment: true,
+            ...null
+        }
+        const walineInstance = initFn(walineOptions)
+        utils.addGlobalFn('pjax', () => walineInstance.destroy(), 'destroyWaline')
+        GLOBAL_CONFIG.lightbox && utils.lightbox(document.querySelectorAll('#comment .wl-content img:not(.wl-emoji)'))
+        sco.owoBig({
+            body: '.wl-emoji-popup',
+            item: '.wl-tab-wrapper button'
+        })
+    }
+
+    async function loadWaline() {
+        if (walineInitFunction) initWaline(walineInitFunction)
+        else {
+            await utils.getCSS('https://fastly.jsdelivr.net/npm/@waline/client@3.4.3/dist/waline.min.css')
+            const {init} = await import('https://fastly.jsdelivr.net/npm/@waline/client@3.4.3/dist/waline.min.js')
+            walineInitFunction = init || Waline.init
+            initWaline(walineInitFunction)
+            window.walineFn = walineInitFunction
+        }
+        false && barrageWaline()
+    }
+
+    if (true || true) {
+        if (true) utils.loadComment(document.getElementById('waline-wrap'), loadWaline)
+        else loadWaline()
+    } else window.loadTwoComment = loadWaline
+})()
+</script></div></div><!-- pjax--><script>const pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: ["title","#body-wrap","#site-config","meta[name=\"description\"]",".js-pjax","meta[property^=\"og:\"]","#config-diff",".rs_show",".rs_hide"],
+    cacheBust: false,
+    analytics: false,
+    scrollRestoration: false
+})
+
+document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+})
+
+document.addEventListener('pjax:complete', () => {
+    window.refreshFn()
+
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+        const newScript = document.createElement('script')
+        const content = item.text || item.textContent || item.innerHTML || ""
+        Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+        newScript.appendChild(document.createTextNode(content))
+        item.parentNode.replaceChild(newScript, item)
+    })
+
+    GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+})
+
+document.addEventListener('pjax:error', (e) => {
+    if (e.request.status === 404) {
+        pjax.loadUrl('/404.html')
+    }
+})</script><!-- google adsense--><!-- search--><!-- music--></body></html>
+        <script>
+            const posts = ["20250720/scammer-list/","20250719/scammer-list/","20250718/scammer-list/","20250717/scammer-list/","/report-scammer/","/scammer-types/","/welcome/"];
+            function toRandomPost() {
+                const randomPost = posts[Math.floor(Math.random() * posts.length)];
+                pjax.loadUrl(GLOBAL_CONFIG.root + randomPost);
+            }
+        </script>
