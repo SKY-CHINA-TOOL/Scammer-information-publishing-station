@@ -98,8 +98,8 @@ hometop:
     enable: true
     sup: 置顶
     title: 欢迎来到光遇骗子曝光站
-    url: /2025/07/16/welcome/
-    img: https://vip.123pan.cn/1810660/yk6baz03t0m000d7w33ga1968ti7c692DIYPDdQzDcxPAdJwDF==.png
+    url: /welcome/
+    img: /img/welcome.png
     color: "none"
 # --------------------------- end ---------------------------
 
